@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>METODO MAGIS - CAPITOLI ESPERIENZIALI</title>
+    <title>METODO MAGIS</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
@@ -476,15 +476,15 @@
         <div class="screen active" id="introScreen">
             <div style="text-align: center; margin-top: 50px;">
                 <div class="chapter-title" style="font-size: 4rem; margin-bottom: 20px;">METODO MAGIS</div>
-                <div class="chapter-subtitle" style="margin-bottom: 40px;">CAPITOLI ESPERIENZIALI</div>
+                <div class="chapter-subtitle" style="margin-bottom: 40px;">MISSIONI SPECIALI</div>
                 <div class="divider"></div>
                 <div style="margin-top: 60px; font-size: 1.2rem; line-height: 2; color: rgba(230, 247, 255, 0.8);">
-                    <p>Un percorso di apprendimento immersivo</p>
-                    <p>basato sull'esplorazione sensoriale consapevole.</p>
-                    <p style="margin-top: 40px; color: var(--accent-cyan); font-weight: 700;">Ogni azione modifica la realtà.</p>
-                    <p style="color: var(--accent-orange); font-weight: 700; margin-top: 20px;">Scopri cosa sta accadendo intorno a te.</p>
+                    <p>Rilevata un'anomalia nella stanza in cui ti trovi</p>
+                    <p>Abbiamo bisogno di te.</p>
+                    <p style="margin-top: 40px; color: var(--accent-cyan); font-weight: 700;">Accetti la missione?</p>
+                    <p style="color: var(--accent-orange); font-weight: 700; margin-top: 20px;">Scopri METODO MAGIS.</p>
                 </div>
-                <button class="btn-action" onclick="gameController.startChapter(0)" style="margin-top: 60px;">▶ INIZIA CAPITOLO 01</button>
+                <button class="btn-action" onclick="gameController.startChapter(0)" style="margin-top: 60px;">▶ ACCETTO</button>
             </div>
         </div>
 
@@ -501,16 +501,15 @@
         const chapters = [
             {
                 number: 1,
-                title: "CAPITOLO 01",
+                title: "MISSIONE",
                 subtitle: "IL POTERE DEI COLORI",
                 missions: [
                     {
                         id: 1,
-                        label: "MISSIONE 01",
+                        label: "01",
                         title: "SEGNALE ROSSO",
                         timer: 15,
-                        instruction: "Scegli un oggetto ROSSO qualsiasi nella stanza e cambia la sua posizione.",
-                        options: ["Mettilo sotto qualcosa", "Oppure dentro qualcosa"],
+                        instruction: "Onde invisibili nella stanza si comportano in modo anomalo. Scegli un oggetto ROSSO qualsiasi nella stanza e cambia la sua posizione.",
                         fragments: 10,
                         result: "ROSSO ISOLATO",
                         systemMessage: "La cosa rossa sta assorbendo tutti i colori mandati dalla luce…\n…tranne il rosso.\nIl rosso viene rimandato indietro.",
